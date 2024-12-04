@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineTex</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">CineTex</div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#peliculasRecomendadas" >Películas</a></li>
+            
+            
+        </ul>
+    </nav>
+    
+</header>
+
+<!-- Contenedor principal -->
+<div id="mainContent">
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Bienvenido a CineTex</h1>
+            <p>Explora películas, series exclusivas y más.</p>
+        </div>
+    </section>
+
+    <section class="categories-section">
+        <h2>Categorías</h2>
+        <div class="categories">
+            <button class="category-button" data-category="accion">Acción</button>
+            <button class="category-button" data-category="comedia">Comedia</button>
+            <button class="category-button" data-category="drama">Drama</button>
+            <button class="category-button" data-category="romance">Romance</button>
+        </div>
+    </section>
+
+    <section class="content-section" id="peliculasRecomendadas">
+        <h2>Películas Recomendadas</h2>
+        <div class="grid">
+            <!-- Películas -->
+            <div class="movie-card" data-title="Interestelar" id="searchInput">
+                <img src="img/interestelar.jpg" alt="Interestelar"data-category="drama" data-video="video/interestelar.mp4">
+            </div>
+            <div class="movie-card" id="searchInput">
+                <img src="img/moana.jpg" alt="moana" data-category="drama" data-video="video/moana.mp4">
+            </div>
+            <div class="movie-card" id="searchInput">
+                <img src="img/shazam.jpg" alt="shazam" data-category="accion" data-video="video/shazam.mp4">
+            </div>
+            <div class="movie-card" id="searchInput">
+                <img src="img/mebeforeu.jpg" alt="Me Before You" data-category="romance" data-video="video/yo-antes-de-ti.mp4">
+            </div>
+            <div class="movie-card"id="searchInput">
+                <img src="img/misionimposible.jpg" alt="Misión Imposible" data-category="accion" data-video="video/Misión.Imposible.mp4">
+            </div>
+            <div class="movie-card" id="searchInput">
+                <img src="img/black-adam.jpg" alt="Película 6" data-category="accion" data-video="video/Black.Adam.mp4">
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- Contenedor para el reproductor de video -->
+<div id="videoPlayerContainer" style="display: none;">
+    <button id="closeVideoPlayer">Regresar</button>
+    <video id="videoPlayer" controls autoplay>
+        <source id="videoSource" src="" type="video/mp4">
+        Tu navegador no soporta el reproductor de video.
+    </video>
+</div>
+
+<footer>
+    <p>&copy; 2024 Mi Plataforma de Películas Francisco.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
